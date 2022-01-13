@@ -1,6 +1,6 @@
 # CONFIG
 # ---------
-token = "OTMwNTUzMzU5MDkyNTY4MDk1.Yd3jWQ.u8IR6GdFrv_Y53KHWU1luUZlt4g" # This is what the bot uses to log into Discord.
+token = os.environ.get("BOT_KEY") # This is what the bot uses to log into Discord.
 prefix = "-" # This will be used at the start of commands.
 # ----------
 
@@ -12,7 +12,7 @@ import asyncio
 from colorama import Fore
 import datetime
 import random
-
+import os
 
 bot = commands.Bot(command_prefix=prefix)
 
